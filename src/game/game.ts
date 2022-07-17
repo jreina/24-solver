@@ -70,16 +70,16 @@ export class Game {
   public addListener(
     event: GameEvent.CurrentChanged,
     handler: Func<Round, void>
-  );
+  ): void;
   public addListener(
     event: GameEvent.DeckChanged | GameEvent.DiscardsChanged,
     handler: Func<Array<Card>, void>
-  );
+  ): void;
   public addListener(
     event: GameEvent.PlayersChanged,
     handler: Func<Array<PlayerData>, void>
-  );
-  public addListener(event: GameEvent, handler: Func<any, void>) {
+  ): void;
+  public addListener(event: GameEvent, handler: Func<any, void>): void {
     this._gameEventEmitter.on(event, handler);
   }
 
