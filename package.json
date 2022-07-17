@@ -10,7 +10,12 @@
     "rebuild": "npm run clean && npm run build",
     "prepublishOnly": "npm run rebuild"
   },
-  "keywords": ["24", "game", "cards", "math"],
+  "keywords": [
+    "24",
+    "game",
+    "cards",
+    "math"
+  ],
   "author": "Johnny Reina",
   "license": "MIT",
   "dependencies": {
@@ -23,5 +28,9 @@
     "@types/node": "^18.0.5",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
-  }
+  },
+  "files": [
+    "LICENSE",
+    "dist/"
+  ]
 }
